@@ -1,0 +1,139 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: #19a2ae;
+  overflow: hidden;
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.main__bg {
+  position: absolute;
+  z-index: -1;
+}
+
+.main__bg__top {
+  top: -100%;
+  left: -200%;
+}
+
+@media screen and (min-width: 1440px) {
+  .main__bg__top {
+    top: -80%;
+    left: -15%;
+  }
+}
+
+.main__bg__bottom {
+  bottom: -100%;
+  right: -200%;
+}
+
+@media screen and (min-width: 1440px) {
+  .main__bg__bottom {
+    bottom: -80%;
+    right: -15%;
+  }
+}
+
+.card {
+  margin-left: 1em;
+  margin-right: 1rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  width: 20rem;
+  background-color: white;
+}
+
+.card__bg__pattern {
+  background-size: cover;
+  border-radius: 1rem 1rem 0 0;
+  width: inherit;
+  height: 9rem;
+}
+
+.card__profile {
+  position: relative;
+}
+
+.card__avatar {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translateY(-55%);
+          transform: translateY(-55%);
+  border-radius: 100%;
+  border: 5px solid white;
+}
+
+.card__identity {
+  margin-top: 4.5rem;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.card__name {
+  font-size: 1.25rem;
+  color: #2d3248;
+  margin-bottom: 0.75rem;
+}
+
+.card__age {
+  font-weight: normal;
+  color: #969696;
+  margin-left: 0.25rem;
+}
+
+.card__location {
+  color: #969696;
+  font-size: 14px;
+}
+
+.card__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1.75rem 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card__details__item {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  gap: 0.55rem;
+}
+
+.card__details__item__number {
+  color: #2d3248;
+}
+
+.card__details__item__title {
+  font-size: 10px;
+  color: #969696;
+  letter-spacing: 0.15rem;
+}
+/*# sourceMappingURL=style.css.map */
